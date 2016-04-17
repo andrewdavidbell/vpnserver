@@ -8,8 +8,8 @@
 Vagrant.configure(2) do |config|
 
   config.vm.box       = "centos/7"
-  config.vm.host_name = "dev.hostname.vm"
-  config.vm.define    :app
+  config.vm.host_name = "vpnserver.vm"
+  config.vm.define    :vpnserver
 
 #  config.vm.network "private_network", ip: "192.168.10.10"
 #  config.vm.network "forwarded_port", guest: 80, host: 8084
