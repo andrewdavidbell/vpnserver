@@ -33,7 +33,7 @@ Vagrant.configure(2) do |config|
   # Puppet Shared Folder
   # See https://github.com/mitchellh/vagrant/issues/6154 for why we do this.
   config.vm.synced_folder ".", "/home/vagrant/sync", disabled: true
-  config.vm.synced_folder "puppet", "/puppet"
+  config.vm.synced_folder "puppet", "/puppet", type: "rsync"
 
   # Puppet Provisioner setup
   config.vm.provision "puppet" do |puppet|

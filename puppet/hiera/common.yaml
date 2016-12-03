@@ -1,2 +1,3 @@
 ---
-my_message: "Hello World!"
+dns_primary: 8.8.8.8
+dns_secondary: 8.8.4.4
